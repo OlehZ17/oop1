@@ -3,7 +3,7 @@
 #include <cmath>
 using namespace std;
 
-FloatPower makeIntPower(int x, int y)
+FloatPower makeIntPower(double x, double y)
 {
     FloatPower nn;
     if (!nn.Init(x, y))
