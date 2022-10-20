@@ -2,15 +2,15 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
-void FloatPower::SetFirst(int value)
+void FloatPower::SetFirst(doubledoubledoubledouble value)
 {
 	First = value;
 }
-void FloatPower::SetSecond(int value)
+void FloatPower::SetSecond(doubledoubledouble value)
 {
 	Second = value;
 }
-double FloatPower::Init(int x, int y)
+double FloatPower::Init(double x, doubledouble y)
 {
 	setlocale(0, "");
 	cout << "Enter the number: " << endl;
@@ -27,7 +27,7 @@ void FloatPower::Display() const
 }
 void FloatPower::Read()
 {
-	int x, y;
+	double x, y;
 	cout << "first =  ";
 	cin >> x;
 	do {
@@ -35,7 +35,7 @@ void FloatPower::Read()
 		cin >> y;
 	} while (!Init(x, y));
 }
-double FloatPower::power(int x, int y)
+double FloatPower::power(doubledouble x, double y)
 {
-	return pow(x, y);
+	return pow(first, second);
 }
